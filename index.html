@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!--Header-->
     <header>
         <h1>
             <a href="/">
@@ -22,26 +23,30 @@
                     <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#favorites">My Favorites</a>
+                    <a href="./favorites.html">My Favorites</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <body>
+
+        <!--Hero section-->
         <hero>
             <p class="description"></p>
         </hero>
-
+        
+        <!--user search section-->
         <div class="search-container">
             <h3 class="card-header text-uppercase">Search for a Book</h3>
             <form id="form" class="card-body">
                 <label class="form-label" for="book">Book</label>
-                <input name="book" id="book" type="text" autofocus="true" class="form-input" />
+                <input name="book" id="book" type="text" placeholder="Book Name" autofocus="true" class="form-input" />
                 <button class="search" type="submit">Search</button>
             </form>
         </div>
 
+        <!--results of user search-->
         <div class="results-container">
             <img class="bookPicture">
             <div class="reviews"></div>
