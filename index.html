@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\css\styles.css" />
-    <title>Document</title>
+    <title>Book Finder</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>
+            <a href="/">
+                Book Finder
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#favorites">My Favorites</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <hero>
+            <p class="description"></p>
+        </hero>
+
+        <div class="search-container">
+            <h3 class="card-header text-uppercase">Search for a Book</h3>
+            <form id="form" class="card-body">
+                <label class="form-label" for="book">Book</label>
+                <input name="book" id="book" type="text" autofocus="true" class="form-input" />
+                <button class="search" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="results-container">
+            <img class="bookPicture">
+            <div class="reviews"></div>
+            <div class="favorites"></div>
+        </div>
+
+    </body>
+
+    <footer></footer>
+
+
     <script src="assets\js\script.js"></script>
 </body>
+
 </html>
