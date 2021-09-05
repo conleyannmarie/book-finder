@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ header {
+    padding: 20px 35px;
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header nav ul {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    
+
+}
+
