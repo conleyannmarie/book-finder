@@ -16,14 +16,19 @@ console.log(bookResult);
 
 // searchBtn.addEventListener("click", formSubmitHandler);
 
+const apiKey = "rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm";
+
 var formSubmitHandler = function(event) {
     event.preventDefault();
 
     var bookResult = userFormEl.value.trim();
     console.log(bookResult);
-        fetch("https://api.nytimes.com/svc/books/v3/reviews.json?api-key=rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm" + "title" + bookResult)
+
+    const query = `https://api.nytimes.com/svc/books/v3/reviews.json?title=${bookResult}&api-key=${apiKey}`;
+
+        fetch(query)
         .then((response) => response.json())
-        .then((data) => console.log(data));
+        .then((data) => console.log("data: ",data));
 
 };
 
@@ -33,3 +38,5 @@ searchBtn.addEventListener("click", formSubmitHandler);
 // https://api.nytimes.com/svc/books/v3/reviews.json?api-key=
 
 // rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm
+
+// AyMlAvgR8kDM9SOMERKkD0wyBCc1Hr1q
