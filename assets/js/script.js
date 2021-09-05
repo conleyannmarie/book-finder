@@ -1,9 +1,35 @@
-fetch("https://www.googleapis.com/books/v1/volumes?q=intitle:flowers&key=AIzaSyCLeDEOIA4bhAKyhvgumkaPe-q5PWtLT4c")
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+var userFormEl = document.querySelector("#book");
+var searchBtn = document.querySelector(".search");
 
-fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm")
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+var bookResult = userFormEl.value;
+console.log(bookResult);
+
+// var formSubmitHandler = function (event) {
+//   event.preventDefault();
+
+//   var bookResult = userFormEl.value.trim();
+//   console.log(bookResult);
+//     fetch("https://www.googleapis.com/books/v1/volumes?q=intitle:" + bookResult + "&maxResults=20&printType=books&orderBy=relevance")
+//     .then((response) => response.json())
+//     .then((data) => console.log(data));
+// };
+
+// searchBtn.addEventListener("click", formSubmitHandler);
+
+var formSubmitHandler = function(event) {
+    event.preventDefault();
+
+    var bookResult = userFormEl.value.trim();
+    console.log(bookResult);
+        fetch("https://api.nytimes.com/svc/books/v3/reviews.json?api-key=rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm" + "title" + bookResult)
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+};
+
+searchBtn.addEventListener("click", formSubmitHandler);
+
+
+// https://api.nytimes.com/svc/books/v3/reviews.json?api-key=
+
+// rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm
