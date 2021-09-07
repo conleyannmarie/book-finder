@@ -23,4 +23,12 @@ header nav ul {
     
 
 }
-  
+
+footer {
+    height: 60px;
+    display: bottom;
+    background-color: black;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
