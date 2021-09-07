@@ -16,6 +16,7 @@ var formSubmitHandler = function (event) {
 
 searchBtn.addEventListener("click", formSubmitHandler);
 
+// NY Times API constant
 const apiKey = "rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm";
 
 var formSubmitHandler = function(event) {
