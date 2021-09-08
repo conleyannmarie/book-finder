@@ -16,7 +16,7 @@ var formSubmitHandler = function (event) {
   fetch(
     "https://www.googleapis.com/books/v1/volumes?q=intitle:" +
       bookResult +
-      "&maxResults=20&printType=books&orderBy=relavance"
+      "&maxResults=20&printType=books&orderBy=relevance"
   )
     .then((response) => response.json())
     .then((data) => console.log(data));
