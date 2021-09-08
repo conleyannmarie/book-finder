@@ -22,8 +22,6 @@ var formSubmitHandler = function (event) {
     .then((data) => console.log(data));
 };
 
-searchBtn.addEventListener("click", formSubmitHandler);
-
 const apiKey = "rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm";
 
 var formSubmitHandler = function (event) {
@@ -39,8 +37,6 @@ var formSubmitHandler = function (event) {
     .then((response) => response.json())
     .then((data) => console.log("data: ", data));
 };
-
-searchBtn.addEventListener("click", formSubmitHandler);
 
 // https://api.nytimes.com/svc/books/v3/reviews.json?api-key=
 
