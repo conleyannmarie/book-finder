@@ -81,7 +81,7 @@ const findBook = function (bookName) {
           `;
 
             // YOUR CODE HERE
-            document.querySelector(".results-container").innerHTML = template;
+            document.querySelector("#results-container").innerHTML = template;
           });
       });
 
@@ -124,7 +124,7 @@ const findBook = function (bookName) {
             `;
           });
 
-          document.querySelector(".results-container-2").innerHTML = template;
+          document.querySelector("#results-container-2").innerHTML = template;
 
             });
         };
