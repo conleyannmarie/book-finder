@@ -31,3 +31,7 @@ header nav ul {
     flex-direction: column;
 
 }
+
+.description {
+    text-align: center;
+}
