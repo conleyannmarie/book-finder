@@ -1,3 +1,4 @@
+//beginning variables
 var userFormEl = document.querySelector("#book");
 var searchBtn = document.querySelector(".search");
 
@@ -10,6 +11,8 @@ var formSubmitHandler = function (event) {
   var bookResult = userFormEl.value.trim();
   findBook(bookResult);
   console.log(bookResult);
+
+  //fetch request for google books
   fetch(
     "https://www.googleapis.com/books/v1/volumes?q=intitle:" +
       bookResult +
@@ -29,6 +32,7 @@ var formSubmitHandler = function (event) {
   var bookResult = userFormEl.value.trim();
   console.log(bookResult);
 
+  //fetch request nytimes
   const query = `https://api.nytimes.com/svc/books/v3/reviews.json?title=${bookResult}&api-key=${apiKey}`;
 
   fetch(query)
@@ -42,8 +46,7 @@ searchBtn.addEventListener("click", formSubmitHandler);
 
 // rOks7u7aABNkDxOUutMyH0ZGf3ixyGWm
 
-// AyMlAvgR8kDM9SOMERKkD0wyBCc1Hr1q
-
+//display books
 const findBook = function (bookName) {
   fetch(`https://www.googleapis.com/books/v1/volumes?q=${bookName}`)
     // Converts the response to JSON
@@ -52,7 +55,7 @@ const findBook = function (bookName) {
     })
     .then(function (response) {
       const listSearch = response.items;
-
+//card block to display
       let template = "";
       listSearch.forEach((item) => {
         template += `
