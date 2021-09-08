@@ -23,6 +23,11 @@ header nav ul {
 }
 
 .results-container {
-    display: flex;
+    flex-direction: column;
+
+}
+
+.results-container-2 {
+    flex-direction: column;
 
 }
