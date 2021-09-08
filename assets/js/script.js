@@ -84,10 +84,6 @@ const findBook = function (bookName) {
             document.querySelector(".results-container").innerHTML = template;
           });
       });
-<<<<<<< HEAD
-    });
-};
-=======
 
       fetch(
         `https://api.nytimes.com/svc/books/v3/reviews.json?title=${bookName}&api-key=${apiKey}`
@@ -133,4 +129,3 @@ const findBook = function (bookName) {
             });
         };
           searchBtn.addEventListener("click", formSubmitHandler);
->>>>>>> develop
