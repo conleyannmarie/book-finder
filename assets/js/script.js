@@ -85,6 +85,8 @@ const findBook = function (bookName) {
           });
       });
 
+      //new york times display card
+
       fetch(
         `https://api.nytimes.com/svc/books/v3/reviews.json?title=${bookName}&api-key=${apiKey}`
       )
