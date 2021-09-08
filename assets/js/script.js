@@ -13,7 +13,7 @@ var formSubmitHandler = function (event) {
   console.log(bookResult);
 
   //fetch request for google books
-  fetch(
+    fetch(
     "https://www.googleapis.com/books/v1/volumes?q=intitle:" +
       bookResult +
       "&maxResults=20&printType=books&orderBy=relevance"
@@ -55,7 +55,7 @@ const findBook = function (bookName) {
     })
     .then(function (response) {
       const listSearch = response.items;
-//card block to display
+      //card block to display
       let template = "";
       listSearch.forEach((item) => {
         template += `
@@ -80,48 +80,57 @@ const findBook = function (bookName) {
           </div>
           `;
 
-        fetch(
-          `https://api.nytimes.com/svc/books/v3/reviews.json?title=${bookName}&api-key=${apiKey}`
-        )
-          // Converts the response to JSON
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (response) {
-            const reviewSearch = response.items;
-
-            let template = "";
-            reviewSearch.forEach((item) => {
-              template += `
-              <div class="card">
-                  <div class="card-content">
-                  <div class="media">
-                      <div class="media-right">
-                      <figure class="image is-48x48">
-                          <img src="" alt="Placeholder image">
-                      </figure>
-                      </div>
-                      <div class="media-content">
-                      <p class="title is-4"></p>
-                      <p class="subtitle is-6">@johnsmith</p>
-                      </div>
-                  </div>
-              
-                  <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                      <a href="${item.results.url}">#css</a> New York Times Review<a href="#">#responsive</a>
-                      <br>
-                      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                  </div>
-                  </div>
-              </div>
-              `;
-            });
-
             // YOUR CODE HERE
             document.querySelector(".results-container").innerHTML = template;
           });
       });
+<<<<<<< HEAD
     });
 };
+=======
+
+      fetch(
+        `https://api.nytimes.com/svc/books/v3/reviews.json?title=${bookName}&api-key=${apiKey}`
+      )
+        // Converts the response to JSON
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (response) {
+          const reviewSearch = response.results;
+
+          let template = "";
+          reviewSearch.forEach((item) => {
+            template += `
+            <div class="card">
+                <div class="card-content">
+                <div class="media">
+                    <div class="media-right">
+                    <figure class="image is-48x48">
+                        <img src="" alt="Placeholder image">
+                    </figure>
+                    </div>
+                    <div class="media-content">
+                    <p class="title is-4"></p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                </div>
+            
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a href="${item.url}">#css</a> New York Times Review<a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+                </div>
+            </div>
+            `;
+          });
+
+          document.querySelector(".results-container-2").innerHTML = template;
+
+            });
+        };
+          searchBtn.addEventListener("click", formSubmitHandler);
+>>>>>>> develop

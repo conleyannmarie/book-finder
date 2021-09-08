@@ -22,3 +22,7 @@ header nav ul {
     list-style: none;
 }
 
+.results-container {
+    display: flex;
+
+}
