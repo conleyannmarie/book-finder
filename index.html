@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\css\styles.css" />
     <title>Book Finder</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
 
-  <body>
+<body>
     <!--Header-->
     <header class="columns">
-      <img src="./assets/images/book.png" alt="an image of a open book" />
-      <h1 class="column">
-        <a href="/" class="column"> Book Finder </a>
-      </h1>
-      <nav>
-        <ul class="menu flex-row">
-          <li>
-            <a href="./index.html" class="column">Home</a>
-          </li>
+        <img src="./assets/images/book.png" alt="an image of a open book">
+        <h1 class="column">
 
-          <li>
-            <a href="./favorites.html" class="column">My Favorites</a>
-          </li>
-        </ul>
-      </nav>
+            <a href="/" class="column">
+                Book Finder
+            </a>
+        </h1>
+        <nav>
+            <ul class="menu flex-row">
+                <li>
+                    <a href="./index.html" class="column">Home</a>
+                </li>
+
+                <li>
+                    <a href="./favorites.html" class="column">My Favorites</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    
 
-    <!--Hero section-->
-    <hero>
-      <p class="description">
-        A place where book enthusiasts can research books.
-      </p>
-    </hero>
+        <!--Hero section-->
+        <hero>
+            <p class="description">A place where book enthusiasts can research books.</p>
+        </hero>
 
-    <!--user search section-->
-    <div class="search-container">
-      <h3 class="card-header text-uppercase">Search for a Book</h3>
-      <form id="form" class="card-body">
-        <label class="form-label" for="book">Book</label>
-        <input
-          name="book"
-          id="book"
-          type="text"
-          placeholder="Book Name"
-          autofocus="true"
-          class="form-input"
-        />
-        <button class="search" type="submit">Search</button>
-      </form>
+        <!--user search section-->
+        <div class="search-container">
+            <h3 class="card-header text-uppercase">Search for a Book</h3>
+            <form id="form" class="card-body">
+                <label class="form-label" for="book">Book</label>
+                <input name="book" id="book" type="text" placeholder="Book Name" autofocus="true" class="form-input" />
+                <button class="search" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!--results of user search-->
+        <div class="columns">
+        <div class="column" id="results-container">
+            
+        </div>
+
+        <div class="column" id="results-container-2">
+            
+        </div>
     </div>
 
-    <!--results of user search-->
-    <div class="results-container"></div>
+    
 
-    <div class="results-container-2"></div>
+    <div class="flex-wrapper">
+        <footer class="footer">
+            <h2>Made with ❤️️ by 3C&T</h2>
+        </footer>
+    </div>
 
-    <footer>
-      <h2>❤️ Page created by 3C&T</h2>
-    </footer>
 
     <script src="assets\js\script.js"></script>
-  </body>
+</body>
+
 </html>
+
