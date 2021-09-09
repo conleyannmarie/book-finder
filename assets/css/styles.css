@@ -34,4 +34,18 @@ header nav ul {
 
 .description {
     text-align: center;
+    font-size: 18px;
 }
+
+input {
+    width: 200px;
+}
+
+header h1 a {
+    font-size: 22px;
+}
+
+header li {
+    font-size: 18px;
+}
+
