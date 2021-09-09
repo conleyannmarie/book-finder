@@ -68,6 +68,14 @@ input {
     border-radius: 9999px;
     border: 1px solid black;
 } 
+
+.search:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: white;
+} 
+/* search end */
+
 footer {
     padding: 20px 35px;
     background-color: black;
@@ -79,10 +87,3 @@ footer {
     width: 100%;
     color: #485fc7;
 }
-
-.search:hover {
-    cursor: pointer;
-    border: 2px solid black;
-    background-color: white;
-} 
-/* search end */
