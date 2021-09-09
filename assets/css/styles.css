@@ -68,6 +68,17 @@ input {
     border-radius: 9999px;
     border: 1px solid black;
 } 
+footer {
+    padding: 20px 35px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #485fc7;
+}
 
 .search:hover {
     cursor: pointer;
