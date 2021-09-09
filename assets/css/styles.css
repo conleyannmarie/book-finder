@@ -4,7 +4,7 @@
 }
 
 
- header {
+header {
     padding: 20px 35px;
     background-color: black;
     justify-content: space-between;
@@ -27,11 +27,14 @@ header nav ul {
 footer {
     padding: 20px 35px;
     background-color: black;
-    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #485fc7;
 }
+
 
 
