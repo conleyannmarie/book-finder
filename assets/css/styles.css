@@ -3,8 +3,8 @@
     padding: 0px;
 }
 
-
- header {
+ /* header start */
+header {
     padding: 20px 35px;
     background-color: black;
     justify-content: space-between;
@@ -21,6 +21,15 @@ header nav ul {
     justify-content: space-between;
     list-style: none;
 }
+
+header h1 a {
+    font-size: 22px;
+}
+
+header li {
+    font-size: 18px;
+} 
+/* header end */
 
 .results-container {
     flex-direction: column;
@@ -39,14 +48,30 @@ header nav ul {
 
 input {
     width: 200px;
+    height: 30px;
 }
 
-header h1 a {
-    font-size: 22px;
+.form-input {
+    margin-left: 5px;
 }
 
-header li {
-    font-size: 18px;
+.card-header {
+    margin-left: 5px;
 }
 
+/* search start */
+.search {
+    background-color: black;
+    color: #485fc7;
+    font-size: 15px;
+    padding: 10px 32px;
+    border-radius: 9999px;
+    border: 1px solid black;
+} 
 
+.search:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: white;
+} 
+/* search end */
