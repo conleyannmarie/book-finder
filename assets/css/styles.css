@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
 }
 
  /* header start */
@@ -82,8 +82,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: #485fc7;
+}
+
+.flex-wrapper {
+    margin-bottom: 45px;
 }
